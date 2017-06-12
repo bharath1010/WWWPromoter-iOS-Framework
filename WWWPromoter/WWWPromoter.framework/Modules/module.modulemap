@@ -1,0 +1,6 @@
+framework module WWWPromoter {
+  umbrella header "WWWPromoter.h"
+
+  export *
+  module * { export * }
+}

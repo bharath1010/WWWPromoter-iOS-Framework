@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <WWWPromoter/PromoterConnection.h>
 
 @interface ViewController ()
 
@@ -25,5 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)ClickHere:(id)sender
+{
+//    NSLog(@"appname---->%@",appname);
+    [[PromoterConnection sharedManager] getConnection];
+}
 
 @end
