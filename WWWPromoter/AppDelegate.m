@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <WWWPromoter/PromoterConnection.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *FeedId = @"21313";
+    
+    [[PromoterConnection sharedManager] InitWithFeedId:FeedId];
     
     return YES;
 }

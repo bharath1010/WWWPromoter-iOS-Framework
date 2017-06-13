@@ -28,8 +28,7 @@
 
 -(IBAction)ClickHere:(id)sender
 {
-//    NSLog(@"appname---->%@",appname);
-    [[PromoterConnection sharedManager] getConnection];
+    [[PromoterConnection sharedManager]getConnection];
 }
 
 @end

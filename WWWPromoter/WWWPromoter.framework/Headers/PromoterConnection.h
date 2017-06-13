@@ -12,12 +12,12 @@
 
 @interface PromoterConnection : NSObject<NSXMLParserDelegate>
 
-
-
 @property(nonatomic,retain) NSString *appName;
 
 @property(nonatomic,retain) NSString *url;
 
+@property(nonatomic,retain) NSString *appFeedId;
+@property(nonatomic,retain) NSString *userAgent;
 
 
 +(instancetype) sharedManager;
@@ -26,9 +26,8 @@
 @property (nonatomic) BOOL selecteditem;
 
 
--(void)InitWithAppName:(NSString *)appname;
+-(void)InitWithFeedId:(NSString *)feedId;
 -(void) getConnection;
-
 
 
 
